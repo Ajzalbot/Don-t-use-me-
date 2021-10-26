@@ -10,11 +10,11 @@ from utils import Media, get_file_details, get_size
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-#photo code kanged from @codes4ya Channel !
+#video code kanged from @codes4ya Channel !
 #Add atleast 10+ Telegraph Links below 👇
 
 
-PHOTO = [
+VIDEO = [
     "https://telegra.ph/file/1b6d4f820a509787e4675.mp4",
 
 ]
@@ -118,8 +118,8 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_photo(
-            photo=f"{random.choice(PHOTO)}",
+        await cmd.reply_video(
+            video=f"{random.choice(VIDEO)}",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
