@@ -124,23 +124,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                        InlineKeyboardButton("🔸GROUP", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🔰CHANNEL🔰", url="https://t.me/FILMCORNER369")
                     ],
                     [
-                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA_IMDB_BOT"),
-                        InlineKeyboardButton("😎 About", callback_data="about")
-                    ],
-                    [
-                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
-                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
-                    ],
-                    [
-                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                        InlineKeyboardButton("About", callback_data="about")
                     ]
                 ]
             )
         )
-
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
