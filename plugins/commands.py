@@ -126,9 +126,8 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton("🔸GROUP", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("🔰CHANNEL🔰", url="https://t.me/FILMCORNER369")
-                    ],
-                    [
-                        InlineKeyboardButton("About", callback_data="about")
+                    ]
+        
                     ]
                 ]
             )
